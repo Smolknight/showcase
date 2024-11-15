@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *,::before{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+       .container{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            flex-wrap: wrap;
+        }
+        .container>h1{
+            align-items: center;
+            padding: 8px;
+        }
+        
+        ul{
+            display: flex;
+            gap: 0.5em;
+            list-style: none;
+            align-items: center;
+            padding: 20px;
+        }
+        a,:link,:visited{
+            text-decoration: none;
+            color: white;
+        }
+      
+        .hero{
+            background-image: url(bg.avif.jpg);
+            height: 400px;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero-content>h2{
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .btn{
+            background-color: palevioletred;
+            padding: 0.2em 3em 0.2em 3em;
+            font-size: 1.5em;
+            color: white;
+            
+        }
+       #menu{
+       text-align: center;
+       background-color: lightgray;
+    }
+    .menu-section{
+        display: flex;
+        gap: 2em;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #menu img{
+            width: 23em;
+            height: 35em;
+    }
+    .menu-item{
+        border: 5px solid black;
+        padding: 0.9em 0.9em 1.2em 0.9em;
+        border-radius: 1em;
+        background-color: white;
+    }
+    .menu-item h2,p{
+        margin: 0;
+    }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cozy Eats</h1>
+            <ul>
+                <li>Home</li>
+                <li><a href="#menu" target="_self">Menu</a></li>
+                <li>About Us</li>
+                <li>Contact</li>
+            
+            </ul>
+        </div>
+    </header>
+        
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Cozy Eats!</h2>
+            
+                <a class="btn">Explore Menu</a>
+                
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+        <div class="menu-section">
+                <div class="menu-item">
+                    <img src="pasta.jpg" alt="pasta">
+                <h2>Pasta Primavera</h2>
+                <p>$12.99</p>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="classic-burger.jfif" alt="hamburger">
+                    <h2>Classic Burger</h2>
+                    <p>$9.99</p>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="salad.jpg" alt="salad">
+                    <h2>Caesar Salad</h2>
+                    <p>$8.99</p>
+                </div>
+        </div>
+        </section>
+    
+
+</body>
+</html>
